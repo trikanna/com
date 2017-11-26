@@ -21,11 +21,11 @@ const TemplateWrapper = ({ children }) => (
         },
         {
           name: 'keywords',
-          content: 'blog, react, react native, articles, vlog, courses, tutorials'
+          content: 'blog, react, react native, blog, vlog, cursos, tutoriales, gratis'
         },
         {
           name: 'viewport',
-          content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0'
+          content: 'width=device-width, initial-scale=1.0, user-scalable=no'
         }
       ]}
     />
