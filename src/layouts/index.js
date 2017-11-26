@@ -13,7 +13,7 @@ const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
       title="Santiago Camelo"
-      htmlAttributes={[{ lang: 'es' }]}
+      htmlAttributes={{ lang: 'es' }}
       meta={[
         {
           name: 'description',
@@ -25,8 +25,7 @@ const TemplateWrapper = ({ children }) => (
         },
         {
           name: 'viewport',
-          content:
-            'width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, shrink-to-fit=no'
+          content: 'width=device-width, initial-scale=1.0, user-scalable=no, shrink-to-fit=no'
         }
       ]}
     />
