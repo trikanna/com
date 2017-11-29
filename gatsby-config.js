@@ -7,6 +7,13 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-catch-links`,
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/posts`,
+        name: 'posts'
+      }
+    },
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-manifest`,
