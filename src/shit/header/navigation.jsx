@@ -12,9 +12,9 @@ class Navigation extends Component {
     super(props);
 
     this.data = [
-      { id: 1, order: 1, label: 'Series', url: '/series' },
-      { id: 2, order: 3, label: 'Proyectos', url: '/proyectos' },
-      { id: 4, order: 2, label: 'Blog', url: '/blog' }
+      { id: 1, order: 1, label: 'Videos', url: '/series' },
+      /*{ id: 2, order: 3, label: 'Proyectos', url: '/proyectos' },*/
+      { id: 4, order: 2, label: 'Articulos', url: '/blog' }
     ];
 
     this.data.sort((a, b) => {

@@ -14,6 +14,13 @@ module.exports = {
         name: 'posts'
       }
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-61808521-1',
+        anonymize: false
+      }
+    },
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-manifest`,
