@@ -8,14 +8,15 @@ const Wrapper = styled.div`
   background: #fff;
   color: #333;
   height: 100px;
-  padding: 50px 30px 0 30px;
+  padding: 50px 20px 0 20px;
   position: relative;
   border-bottom: 1px solid #f2f2f2;
 
-  ${media.giant`padding: 50px 10px 0 10px;`};
-  ${media.desktop``};
-  ${media.tablet``};
-  ${media.phone`padding-top: 14px; height: 50px;`};
+  ${media.xl`padding: 50px 20px 0 20px;`};
+  ${media.lg``};
+  ${media.md``};
+  ${media.sm``};
+  ${media.xs`padding-top: 14px; height: 50px;`};
 
   a {
     text-decoration: none;

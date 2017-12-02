@@ -16,7 +16,7 @@ const SeriesPopular = styled.h4`
 const Wrapper = styled.div`
   margin-top: 50px;
 
-  ${media.phone`margin-top: 30px;`};
+  ${media.xs`margin-top: 30px;`};
 `;
 
 const ActionsPanel = styled.div`
@@ -24,12 +24,12 @@ const ActionsPanel = styled.div`
   margin-bottom: 20px;
   margin-top: 5px;
 
-  ${media.phone`text-align: left;`};
+  ${media.xs`text-align: left;`};
 
   button {
     margin: 0 0 0 20px;
 
-    ${media.phone`margin: 0 20px 0 0; font-size: 14px; font-weight: 500;`};
+    ${media.xs`margin: 0 20px 0 0; font-size: 14px; font-weight: 500;`};
   }
 `;
 

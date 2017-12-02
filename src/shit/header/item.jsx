@@ -11,12 +11,12 @@ const Button = styled.span`
   letter-spacing: initial;
 
   a {
-    padding: 1px 5px;
+    padding: 1px 5px 2px 5px;
 
     &.active {
       cursor: default;
       background: #007aff;
-      border-radius: 1pt;
+      border-radius: 2px;
       color: white !important;
     }
   }

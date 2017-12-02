@@ -41,7 +41,7 @@ const Title = styled.h4`
   min-height: 44px;
   color: #222;
 
-  ${media.phone`font-size: 17px; line-height: 19px;`};
+  ${media.xs`font-size: 17px; line-height: 19px;`};
 `;
 
 const Description = styled.p`

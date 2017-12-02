@@ -12,7 +12,13 @@ const ImagePlaceholder = styled.div`
   //padding-top: 56.25%; /* 16:9 */
   height: 284px;
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+
+  ${media.xl`height: 200px;`};
+  ${media.lg`height: 200px;`};
+  ${media.md`height: 200px;`};
+  ${media.sm`height: 180px;`};
+  ${media.xs`height: 230px;`};
 
   h2 {
     width: calc(100% - 30px);

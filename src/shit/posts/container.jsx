@@ -9,7 +9,7 @@ import Post from './post';
 const Wrapper = styled.div`
   margin-top: 50px;
 
-  ${media.phone`margin-top: 30px;`};
+  ${media.xs`margin-top: 30px;`};
 `;
 
 class PostContainer extends Component {
