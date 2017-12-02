@@ -10,7 +10,7 @@ import './reset.scss';
 import './global.scss';
 
 const TemplateWrapper = ({ children }) => (
-  <div style={{ display: 'none' }}>
+  <div>
     <Helmet
       title="Santiago Camelo"
       htmlAttributes={{ lang: 'es' }}

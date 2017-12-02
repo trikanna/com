@@ -1,6 +1,15 @@
 import Link from 'gatsby-link';
-
 import React, { Component } from 'react';
+import styled from 'styled-components';
+import PostContainer from '../shit/posts/container';
+
+const Wrapper = styled.div`
+  padding-top: 50px;
+`;
+
+const PostsTitle = styled.h1`
+  margin-bottom: 30px;
+`;
 
 export default class PostList extends Component {
   constructor(data) {
@@ -10,27 +19,11 @@ export default class PostList extends Component {
     const { edges } = this.props.data.allFile;
 
     return (
-      <div>
-        <h1>Blog posts</h1>
-        <br />
-        <p>yes, something catchy here</p>
-        <br />
-        <br />
+      <Wrapper>
+        <PostsTitle>Hora de leer!</PostsTitle>
 
-        <ul>
-          {edges.map(post => {
-            return (
-              <li key={post.node.internal.contentDigest} style={{ padding: '5px 0' }}>
-                <Link to={post.node.childMarkdownRemark.frontmatter.path}>
-                  {post.node.childMarkdownRemark.frontmatter.title}
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-
-        {/*<Link to="/">Homepage</Link>*/}
-      </div>
+        <PostContainer data={edges} />
+      </Wrapper>
     );
   }
 }
@@ -46,9 +39,11 @@ export const allPosts = graphql`
             contentDigest
           }
           childMarkdownRemark {
+            timeToRead
             frontmatter {
               title
               path
+              image
             }
           }
         }

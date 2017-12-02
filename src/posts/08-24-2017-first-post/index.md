@@ -1,6 +1,7 @@
 ---
 path: '/blog/primer-post'
-title: 'Mi primer Post'
+title: 'Comenzando con React.js'
+image: 'https://thumbs.dreamstime.com/b/laptop-purple-screen-102644705.jpg'
 ---
 
 # h1

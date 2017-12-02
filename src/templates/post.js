@@ -1,5 +1,10 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import styled from 'styled-components';
+
+const Wrapper = styled.div`
+  background: red;
+`;
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data;
@@ -20,6 +25,7 @@ export const postQuery = graphql`
       frontmatter {
         path
         title
+        image
       }
     }
   }

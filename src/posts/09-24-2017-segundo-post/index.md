@@ -1,6 +1,7 @@
 ---
 path: '/blog/segundo-y-mas-largo-post'
-title: 'Seehhh... se va la segunda'
+title: 'Variables de entorno a create-react-app'
+image: 'https://thumbs.dreamstime.com/b/smartphone-app-icons-95593426.jpg'
 ---
 
 ## hi again!
