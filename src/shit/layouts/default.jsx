@@ -8,7 +8,7 @@ class DefaultLayout extends Component {
   render() {
     return (
       <Wrapper>
-        <Grid fluid={false} className="debugs">
+        <Grid fluid={true} className="debugs">
           {this.props.children}
         </Grid>
       </Wrapper>

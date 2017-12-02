@@ -8,7 +8,7 @@ const Wrapper = styled.div`
 `;
 
 const PostsTitle = styled.h1`
-  margin-bottom: 30px;
+  margin-bottom: 63px;
 `;
 
 export default class PostList extends Component {
@@ -20,7 +20,7 @@ export default class PostList extends Component {
 
     return (
       <Wrapper>
-        <PostsTitle>Hora de leer!</PostsTitle>
+        <PostsTitle>Series Recomendadas</PostsTitle>
 
         <PostContainer data={edges} />
       </Wrapper>

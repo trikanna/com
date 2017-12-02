@@ -5,7 +5,6 @@ import styled from 'styled-components';
 
 const Button = styled.span`
   margin-left: 20px;
-  // font-family: Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
   font-size: 13px;
   -webkit-font-smoothing: initial;
   -moz-osx-font-smoothing: initial;
@@ -17,6 +16,7 @@ const Button = styled.span`
     &.active {
       cursor: default;
       background: #007aff;
+      border-radius: 1pt;
       color: white !important;
     }
   }
