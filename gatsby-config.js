@@ -21,6 +21,13 @@ module.exports = {
         anonymize: false
       }
     },
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `yellow`,
+        showSpinner: false
+      }
+    },
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-manifest`,
