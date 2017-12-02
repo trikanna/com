@@ -34,6 +34,8 @@ class PostContainer extends Component {
                 impedit cumque, explicabo, natus consectetur minima delectus, quod ullam voluptas
                 molestiae? At est eum illum placeat iusto, reiciendis provident ratione!
               </p>
+              <br />
+              <br />
             </div>
             {/*data.map((data, index) => {
                 return <Post data={data} key={index} />;
