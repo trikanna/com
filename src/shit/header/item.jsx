@@ -16,7 +16,8 @@ const Button = styled.span`
 
     &.active {
       cursor: default;
-      background: yellow;
+      background: #007aff;
+      color: white !important;
     }
   }
 `;

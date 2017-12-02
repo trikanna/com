@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   position: relative;
   border-bottom: 1px solid #f2f2f2;
 
-  ${media.giant`padding: 50px 15px 0 15px;`};
+  ${media.giant`padding: 50px 10px 0 10px;`};
   ${media.desktop``};
   ${media.tablet``};
   ${media.phone`padding-top: 14px; height: 50px;`};
