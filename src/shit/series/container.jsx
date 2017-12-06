@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col } from 'react-flexbox-grid';
+import { Row, Col, Grid } from 'react-flexbox-grid';
 import SeriesVideo from './video';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
@@ -34,6 +34,10 @@ const ActionsPanel = styled.div`
 `;
 
 class SeriesContainer extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     const { title } = this.props;
 
@@ -55,21 +59,6 @@ class SeriesContainer extends Component {
             <Row>
               <Col lg={12} md={12} sm={12} xs={12}>
                 <SeriesPopular>Videos en la Serie</SeriesPopular>
-              </Col>
-            </Row>
-
-            <Row>
-              <Col lg={3} md={3} sm={3} xs={12}>
-                <SeriesVideo title="Turn a JSON string Into Typed Data in Elm" />
-              </Col>
-              <Col lg={3} md={3} sm={3} xs={12}>
-                <SeriesVideo title="Use the URL as the source of truth in React" />
-              </Col>
-              <Col lg={3} md={3} sm={3} xs={12}>
-                <SeriesVideo title="Leverage New Features of React 16" />
-              </Col>
-              <Col lg={3} md={3} sm={3} xs={12}>
-                <SeriesVideo title="Getting Started with Redux" />
               </Col>
             </Row>
           </Col>

@@ -20,6 +20,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
               title
               path
               image
+              serie
               parent
             }
           }

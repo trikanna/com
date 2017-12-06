@@ -6,12 +6,20 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
+    `gatsby-transformer-json`,
     `gatsby-plugin-catch-links`,
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/posts`,
+        path: `${__dirname}/src/content/posts`,
         name: 'posts'
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/content/videos`,
+        name: 'videos'
       }
     },
     {

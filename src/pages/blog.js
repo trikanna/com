@@ -25,6 +25,8 @@ export default class PostList extends Component {
   render() {
     const { edges } = this.props.data.allFile;
 
+    console.log('edges', edges);
+
     return (
       <Wrapper>
         <PostsTitle>Series Recomendadas</PostsTitle>
@@ -37,7 +39,7 @@ export default class PostList extends Component {
 
 export const allPosts = graphql`
   query AllBlogPosts {
-    allFile {
+    allFile(filter: { sourceInstanceName: { eq: "posts" } }) {
       edges {
         node {
           id

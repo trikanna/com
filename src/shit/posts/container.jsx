@@ -37,15 +37,14 @@ class PostContainer extends Component {
               <br />
               <br />
             </div>
-            {/*data.map((data, index) => {
-                return <Post data={data} key={index} />;
-              })*/}
           </Col>
 
           <Col xs={12} sm={12} md={9} lg={9}>
             <Row>
               {data.map((data, index) => {
-                return <Post data={data} key={index} />;
+                if (data.node.sourceInstanceName === 'posts') {
+                  return <Post data={data} key={index} />;
+                }
               })}
             </Row>
           </Col>
