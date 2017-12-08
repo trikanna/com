@@ -50,8 +50,8 @@ class SeriesContainer extends Component {
                 <SeriesTitle>{title}</SeriesTitle>
               </Col>
               <Col lg={4} md={4} sm={4} xs={12}>
-                <ActionsPanel>
-                  <button>view intro</button>
+                <ActionsPanel className="hidden">
+                  <button>ver mas</button>
                   <button>share</button>
                 </ActionsPanel>
               </Col>

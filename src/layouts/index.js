@@ -9,6 +9,10 @@ import DefaultLayout from '../shit/layouts/default';
 import './reset.scss';
 import './global.scss';
 
+// import 'prismjs/themes/prism.css';
+// import 'prismjs/themes/prism-tomorrow.css';
+import 'prismjs/themes/prism-tomorrow.css';
+
 const TemplateWrapper = ({ children }) => (
   <div className="__hidden__">
     <Helmet

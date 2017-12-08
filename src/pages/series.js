@@ -34,13 +34,8 @@ export default class SeriesList extends Component {
 
     const group = _.groupBy(series, 'node.childMarkdownRemark.frontmatter.serie');
 
-    console.log('group', group);
-
     for (const key in group) {
       sections.push(key);
-      group[key].map((data, index) => {
-        const { title, path, serie } = data.node.childMarkdownRemark.frontmatter;
-      });
     }
 
     return (
@@ -52,10 +47,10 @@ export default class SeriesList extends Component {
 
               <Row>
                 {group[section].map((group, index) => {
-                  const { title, path } = group.node.childMarkdownRemark.frontmatter;
+                  const { title, path, serie, order } = group.node.childMarkdownRemark.frontmatter;
                   return (
                     <Col key={index} lg={3} md={3} sm={3} xs={12}>
-                      <SeriesVideo title={title} path={path} />
+                      <SeriesVideo title={title} path={path} serie={serie} order={order} />
                     </Col>
                   );
                 })}
@@ -88,6 +83,7 @@ export const allVideoSeries = graphql`
               path
               image
               serie
+              order
             }
           }
         }

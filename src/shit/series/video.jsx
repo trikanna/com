@@ -60,13 +60,13 @@ const Description = styled.p`
 
 class SeriesVideo extends Component {
   render() {
-    const { title, path } = this.props;
+    const { title, path, series, order } = this.props;
 
     return (
       <Wrapper>
         <Link to={path}>
           <Caption>
-            <Duration>5:00</Duration>
+            <Duration>#{order}</Duration>
           </Caption>
         </Link>
         <Title>
@@ -80,7 +80,9 @@ class SeriesVideo extends Component {
 
 SeriesVideo.propTypes = {
   title: PropTypes.string.isRequired,
-  path: PropTypes.string.isRequired
+  path: PropTypes.string.isRequired,
+  serie: PropTypes.string,
+  order: PropTypes.number
 };
 
 export default SeriesVideo;

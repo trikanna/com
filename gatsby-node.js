@@ -7,7 +7,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
   return graphql(`
     {
-      allMarkdownRemark {
+      allMarkdownRemark(sort: { fields: [frontmatter___serie, frontmatter___order], order: ASC }) {
         edges {
           node {
             id
@@ -21,6 +21,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
               path
               image
               serie
+              order
               parent
             }
           }

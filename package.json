@@ -15,17 +15,16 @@
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-sass": "^1.0.13",
     "gatsby-plugin-styled-components": "^2.0.2",
+    "gatsby-remark-prismjs": "^1.2.10",
     "gatsby-source-filesystem": "^1.5.9",
     "gatsby-transformer-json": "^1.0.13",
-    "gatsby-transformer-remark": "^1.7.20",
+    "gatsby-transformer-remark": "^1.7.23",
     "lodash": "^4.17.4",
     "prop-types": "^15.6.0",
     "react-flexbox-grid": "^2.0.0",
     "styled-components": "2.2.0"
   },
-  "keywords": [
-    "pepe trueno"
-  ],
+  "keywords": ["pepe trueno"],
   "license": "MIT",
   "main": "n/a",
   "scripts": {

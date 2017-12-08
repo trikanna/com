@@ -25,8 +25,6 @@ export default class PostList extends Component {
   render() {
     const { edges } = this.props.data.allFile;
 
-    console.log('edges', edges);
-
     return (
       <Wrapper>
         <PostsTitle>Series Recomendadas</PostsTitle>
@@ -53,6 +51,7 @@ export const allPosts = graphql`
               title
               path
               image
+              order
             }
           }
         }

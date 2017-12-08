@@ -9,8 +9,6 @@ export default function Template({ data }) {
   const { image, path, serie, title } = data.markdownRemark.frontmatter;
   const { html } = data.markdownRemark;
 
-  console.log('data', data);
-
   if (serie) {
     console.warn('type.video');
   }
@@ -49,6 +47,7 @@ export const postQuery = graphql`
         title
         image
         serie
+        order
       }
     }
   }

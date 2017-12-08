@@ -20,7 +20,11 @@ class PostContainer extends Component {
   render() {
     const { data } = this.props;
 
-    console.log('data', data);
+    data.sort((a, b) => {
+      return (
+        a.node.childMarkdownRemark.frontmatter.order > b.node.childMarkdownRemark.frontmatter.order
+      );
+    });
 
     return (
       <Wrapper>

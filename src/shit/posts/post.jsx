@@ -60,7 +60,7 @@ class Post extends Component {
   }
 
   render() {
-    const { title, path, image } = this.props.data.node.childMarkdownRemark.frontmatter;
+    const { title, path, image, order } = this.props.data.node.childMarkdownRemark.frontmatter;
     const { timeToRead: time } = this.props.data.node.childMarkdownRemark;
 
     return (
@@ -77,7 +77,9 @@ class Post extends Component {
             <p>
               Lectura de <strong>{time}</strong> minuto{time > 1 ? 's' : ''}
             </p>
-            <h2>{title}</h2>
+            <h2>
+              #{order} - {title}
+            </h2>
           </ImagePlaceholder>
         </Link>
         {/*<Link to={path}>{title}</Link>*/}
