@@ -4,14 +4,13 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const Button = styled.span`
-  margin-left: 20px;
-  font-size: 13px;
-  -webkit-font-smoothing: initial;
-  -moz-osx-font-smoothing: initial;
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 400;
   letter-spacing: initial;
 
   a {
-    padding: 1px 5px 2px 5px;
+    padding: 4px 7px 5px 7px;
 
     &.active {
       cursor: default;

@@ -7,7 +7,7 @@ import { media } from '../utils/style-utils';
 import Post from './post';
 
 const Wrapper = styled.div`
-  margin-top: 50px;
+  margin-top: 40px;
 
   ${media.xs`margin-top: 30px;`};
 `;
@@ -32,13 +32,12 @@ class PostContainer extends Component {
           <Col xs={12} sm={12} md={3} lg={3}>
             <div style={{ paddingRight: '10%' }}>
               <h2>Tus primeros pasos con React</h2>
-              <br />
+
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus pariatur
                 impedit cumque, explicabo, natus consectetur minima delectus, quod ullam voluptas
                 molestiae? At est eum illum placeat iusto, reiciendis provident ratione!
               </p>
-              <br />
               <br />
             </div>
           </Col>

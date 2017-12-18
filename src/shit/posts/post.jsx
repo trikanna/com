@@ -26,9 +26,7 @@ const ImagePlaceholder = styled.div`
     position: absolute;
     line-height: normal;
     font-size: 21px;
-    top: 34px;
-    top: 13px;
-    top: 23px;
+    top: 17px;
     left: 15px;
   }
 

@@ -55,7 +55,7 @@ const Description = styled.p`
   font-size: 11px;
   font-weight: 600;
   color: #aaa;
-  display: none;
+  display: nones;
 `;
 
 class SeriesVideo extends Component {
@@ -82,7 +82,7 @@ SeriesVideo.propTypes = {
   title: PropTypes.string.isRequired,
   path: PropTypes.string.isRequired,
   serie: PropTypes.string,
-  order: PropTypes.number
+  order: PropTypes.string
 };
 
 export default SeriesVideo;

@@ -14,7 +14,7 @@ const SeriesPopular = styled.h4`
 `;
 
 const Wrapper = styled.div`
-  margin-top: 50px;
+  margin-top: 30px;
 
   ${media.xs`margin-top: 30px;`};
 `;

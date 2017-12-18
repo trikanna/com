@@ -5,17 +5,14 @@ import PostContainer from '../shit/posts/container';
 import { media } from '../shit/utils/style-utils';
 
 const Wrapper = styled.div`
-  padding-top: 50px;
-
-  ${media.sm`padding-top: 30px;`};
-  ${media.xs`padding-top: 30px;`};
+  padding-top: 30px;
 `;
 
 const PostsTitle = styled.h1`
   margin-bottom: 63px;
 
-  ${media.sm`margin-bottom: 43px;`};
-  ${media.xs`margin-bottom: 43px;`};
+  ${media.sm`margin-bottom: 30px;`};
+  ${media.xs``};
 `;
 
 export default class PostList extends Component {

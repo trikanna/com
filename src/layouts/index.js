@@ -30,6 +30,18 @@ const TemplateWrapper = ({ children }) => (
         {
           name: 'viewport',
           content: 'width=device-width, initial-scale=1.0'
+        },
+        {
+          name: 'apple-mobile-web-app-capable',
+          content: 'yes'
+        },
+        {
+          name: 'apple-mobile-web-app-status-bar-style',
+          content: 'default'
+        },
+        {
+          name: 'apple-mobile-web-app-title',
+          content: 'Santiago Camelo'
         }
       ]}
     />
