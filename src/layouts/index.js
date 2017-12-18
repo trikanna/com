@@ -14,7 +14,7 @@ import './global.scss';
 import 'prismjs/themes/prism-tomorrow.css';
 
 const TemplateWrapper = ({ children }) => (
-  <div className="__hidden__">
+  <div className="hidden">
     <Helmet
       title="Santiago Camelo"
       htmlAttributes={{ lang: 'es' }}
