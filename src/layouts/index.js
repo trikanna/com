@@ -9,8 +9,12 @@ import DefaultLayout from '../shit/layouts/default';
 import './reset.scss';
 import './global.scss';
 
+// import 'prismjs/themes/prism.css';
+// import 'prismjs/themes/prism-tomorrow.css';
+import 'prismjs/themes/prism-tomorrow.css';
+
 const TemplateWrapper = ({ children }) => (
-  <div className="hidden">
+  <div className="__hidden__">
     <Helmet
       title="Santiago Camelo"
       htmlAttributes={{ lang: 'es' }}
@@ -26,6 +30,18 @@ const TemplateWrapper = ({ children }) => (
         {
           name: 'viewport',
           content: 'width=device-width, initial-scale=1.0'
+        },
+        {
+          name: 'apple-mobile-web-app-capable',
+          content: 'yes'
+        },
+        {
+          name: 'apple-mobile-web-app-status-bar-style',
+          content: 'default'
+        },
+        {
+          name: 'apple-mobile-web-app-title',
+          content: 'Santiago Camelo'
         }
       ]}
     />

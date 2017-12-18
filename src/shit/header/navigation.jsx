@@ -4,7 +4,7 @@ import Item from './item';
 
 const Wrapper = styled.span`
   float: right;
-  line-height: 19px;
+  line-height: 20px;
 `;
 
 class Navigation extends Component {
